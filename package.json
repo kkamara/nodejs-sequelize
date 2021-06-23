@@ -1,5 +1,5 @@
 {
-  "name": "typescript-react-base",
+  "name": "typescript-react-app",
   "version": "0.1.0",
   "description": "",
   "main": "src/app.ts",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kkamara/typescript-react-base.git"
+    "url": "git+https://github.com/kkamara/typescript-react-app.git"
   },
   "author": "https://github.com/kkamara",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/kkamara/typescript-react-base/issues"
+    "url": "https://github.com/kkamara/typescript-react-app/issues"
   },
-  "homepage": "https://github.com/kkamara/typescript-react-base#readme",
+  "homepage": "https://github.com/kkamara/typescript-react-app#readme",
   "dependencies": {
     "@types/axios": "^0.14.0",
     "@types/cookie-parser": "^1.4.2",
