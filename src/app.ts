@@ -31,6 +31,10 @@ app.use((req, res, next) => {
 const router = express.Router();
 app.use('/api/v1', router);
 
+app.all('*', (req: express.Request, res: express.Response) => {
+    res.status(200).sendFile(`/`, {root: buildPath});
+});
+
 if (config.nodeEnv === "production") {
     app.listen(config.appPort);
 } else {
