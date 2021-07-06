@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-          <title>Typescript React App</title>
+          <title>Node & React Typescript App</title>
       </Helmet>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
