@@ -3,7 +3,12 @@ import path from 'path';
 
 if (process.env.NODE_ENV !== "production") {
     const parseEnvFile = dotenv.config({
-        path: path.join(__dirname, '../', '.env'),
+        path: path.join(
+            __dirname, 
+            '../', 
+            '../',
+            '.env',
+        ),
     });
 
     if (parseEnvFile.error) {
@@ -11,7 +16,7 @@ if (process.env.NODE_ENV !== "production") {
     }
 }
 
-const helpersConfig = {
+const config = {
     asset: path => {
         if (path[0] === "/") return `${path}`;
         return `/${path}`;
@@ -24,4 +29,4 @@ const helpersConfig = {
     appPort: process.env.PORT || process.env.port || 3000,
 };
 
-export default helpersConfig;
+export default config;
