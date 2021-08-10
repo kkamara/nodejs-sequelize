@@ -1,11 +1,11 @@
-import config from "./config";
+const config = require("./config");
 
-import cookieParser from "cookie-parser";
-import sanitize from 'sanitize';
-import express from "express";
+const cookieParser = require("cookie-parser");
+const sanitize = require('sanitize');
+const express = require("express");
 const app = express();
 
-import path from 'path';
+const path = require('path');
 
 /** serving react with static path */
 const buildPath = path.join(
@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 const router = express.Router();
 app.use('/api/v1', router);
 
-app.all('*', (req: express.Request, res: express.Response) => {
+app.all('*', (req, res) => {
     res.status(200).sendFile(`/`, {root: buildPath});
 });
 
@@ -39,7 +39,9 @@ if (config.nodeEnv === "production") {
     app.listen(config.appPort);
 } else {
     app.listen(config.appPort, () => {
+        const open = require('open');
         const url = `http://127.0.0.1:${config.appPort}`;
+        open(url);
         console.log(`Listening on ${url}`);
     });
 }

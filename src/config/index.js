@@ -1,5 +1,5 @@
-import dotenv from "dotenv";
-import path from 'path';
+const dotenv = require("dotenv");
+const path = require('path');
 
 if (process.env.NODE_ENV !== "production") {
     const parseEnvFile = dotenv.config({
@@ -29,4 +29,4 @@ const config = {
     appPort: process.env.PORT || process.env.port || 3000,
 };
 
-export default config;
+module.exports = config;

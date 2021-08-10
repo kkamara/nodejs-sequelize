@@ -9,12 +9,12 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-          <title>Node & React Typescript App</title>
+          <title>Node & React App</title>
       </Helmet>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Edit <code>src/App.jsx</code> and save to reload.
         </p>
         <a
           className="App-link"
