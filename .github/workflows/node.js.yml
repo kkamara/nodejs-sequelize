@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   node-react-boilerplate:
-    name: pipeline (Node ${{ matrix.node-versions }})
+    name: pipeline (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
     services:
       mysql:
@@ -19,7 +19,7 @@ jobs:
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     strategy:
       matrix:
-        node-version: '17.x'
+        node-version: ['17.x']
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
