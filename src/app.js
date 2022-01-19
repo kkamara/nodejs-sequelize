@@ -48,12 +48,12 @@ if (config.nodeEnv === "production") {
     app.listen(config.appPort);
 } else {
     app.listen(config.appPort, () => {
+        const url = `http://127.0.0.1:${config.appPort}`;
+        console.log(`Listening on ${url}`);
         if (config.nodeEnv === 'testing') {
             return;
         }
         const open = require('open');
-        const url = `http://127.0.0.1:${config.appPort}`;
         open(url);
-        console.log(`Listening on ${url}`);
     });
 }
