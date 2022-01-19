@@ -5,7 +5,7 @@ class API {
      * HTTP lib for network requests 
      * @prop http 
      */
-    protected http = '';
+    _http = '';
 
     /**
      * Base class constructor
@@ -14,7 +14,7 @@ class API {
      * @return void
      */
     constructor(http=null) {
-        this.http = null !== http ? http : axios;
+        this._http = null !== http ? http : axios;
     }
 }
 

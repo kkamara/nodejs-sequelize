@@ -22,11 +22,13 @@ const config = {
         return `/${path}`;
     },
     appName: process.env.APP_NAME,
-    nodeEnv: process.env.NODE_ENV,
+    nodeEnv: process.env.APP_ENV,
     appDebug: process.env.APP_DEBUG == 'true',
     appURL: process.env.APP_URL,
     appLocale: process.env.APP_LOCALE,
-    appPort: process.env.PORT || process.env.port || 3000,
+    appPort: process.env.PORT || process.env.port || 8080,
+    databaseURL: process.env.DATABASE_URL,
+    seleniumPort: process.env.SELENIUM_PORT,
 };
 
 module.exports = config;

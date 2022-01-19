@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha .",
     "start": "node src/app.js"
   },
   "repository": {
@@ -22,9 +22,14 @@
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "sanitize": "^2.1.0"
+    "mysql2": "^2.3.3",
+    "sanitize": "^2.1.0",
+    "sequelize": "^6.13.0"
   },
   "devDependencies": {
-    "open": "^8.2.1"
+    "assert": "^2.0.0",
+    "mocha": "^9.1.4",
+    "open": "^8.2.1",
+    "selenium-webdriver": "^4.1.1"
   }
 }

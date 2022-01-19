@@ -1,8 +1,10 @@
-const config = require("./config");
-
 const cookieParser = require("cookie-parser");
 const sanitize = require('sanitize');
 const express = require("express");
+
+const config = require("./config");
+const database = require("./database");
+
 const app = express();
 
 const path = require('path');
@@ -29,6 +31,13 @@ app.use((req, res, next) => {
 });
 
 const router = express.Router();
+router.get('/test', async (req, res) => {
+    const db = await database();
+
+    await db.close();
+
+    return res.send({message: 'Success'});
+});
 app.use('/api/v1', router);
 
 app.all('*', (req, res) => {
@@ -39,6 +48,9 @@ if (config.nodeEnv === "production") {
     app.listen(config.appPort);
 } else {
     app.listen(config.appPort, () => {
+        if (config.nodeEnv === 'testing') {
+            return;
+        }
         const open = require('open');
         const url = `http://127.0.0.1:${config.appPort}`;
         open(url);
