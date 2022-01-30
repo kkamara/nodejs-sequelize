@@ -1,7 +1,7 @@
-const dotenv = require("dotenv");
-const path = require('path');
+const path = require('node:path');
+const dotenv = require('dotenv');
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV !== 'production') {
     const parseEnvFile = dotenv.config({
         path: path.join(
             __dirname, 
@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== "production") {
 
 const config = {
     asset: path => {
-        if (path[0] === "/") return `${path}`;
+        if (path[0] === '/') return `${path}`;
         return `/${path}`;
     },
     appName: process.env.APP_NAME,
@@ -26,7 +26,7 @@ const config = {
     appDebug: process.env.APP_DEBUG == 'true',
     appURL: process.env.APP_URL,
     appLocale: process.env.APP_LOCALE,
-    appPort: process.env.PORT || process.env.port || process.env.APP_PORT || 8080,
+    appPort: process.env.PORT || process.env.port || 8080,
     databaseURL: process.env.DATABASE_URL,
     seleniumPort: process.env.SELENIUM_PORT,
 };
