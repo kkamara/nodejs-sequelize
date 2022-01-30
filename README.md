@@ -1,4 +1,4 @@
-# ecommerce
+# node-react-boilerplate
 
 Nodejs, Mysql, Redis, Selenium.
 
