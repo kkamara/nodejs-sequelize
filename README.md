@@ -13,7 +13,9 @@ cp .env.example .env && docker-compose up --build -d
 ## To run browser tests
 
 ```bash
-yarn test
+#  -w, --watch              Watch files in the current working directory for
+#                           changes                                 [boolean]
+yarn test -w
 ```
 
 View browser test code: [/blob/main/tests/main_test.go](https://github.com/kkamara/node-react-boilerplate/blob/main/test_setup.js)
