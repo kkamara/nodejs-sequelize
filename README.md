@@ -10,14 +10,13 @@ Have [docker](https://docs.docker.com/engine/install/) & [docker-compose](https:
 cp .env.example .env && docker-compose up --build -d
 ```
 
-## To run browser tests
+## To run browser tests with gui
 
 ```bash
-yarn install
-yarn test
+yarn && yarn test
 ```
 
-View browser test code: [/blob/main/tests/main_test.go](https://github.com/kkamara/node-react-boilerplate/blob/main/test_setup.js)
+View browser test code: [/blob/main/tests/](https://github.com/kkamara/node-react-boilerplate/blob/main/tests/).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
