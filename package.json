@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.js",
   "scripts": {
-    "test": "mocha tests",
+    "test": "nightwatch --config nightwatch.conf.js tests",
     "start": "node src/app.js"
   },
   "repository": {
@@ -28,8 +28,12 @@
   },
   "devDependencies": {
     "assert": "^2.0.0",
+    "chromedriver": "^106.0.1",
     "mocha": "^9.1.4",
+    "nightwatch": "^2.3.9",
+    "nightwatch-axe-verbose": "^2.0.3",
     "open": "^8.2.1",
+    "selenium-server": "^3.141.59",
     "selenium-webdriver": "^4.1.1"
   }
 }

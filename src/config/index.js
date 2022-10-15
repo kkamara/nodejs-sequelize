@@ -1,5 +1,4 @@
-const path = require('node:path');
-const dotenv = require('dotenv');
+const path = require('node:path'); const dotenv = require('dotenv');
 
 if (process.env.NODE_ENV !== 'production') {
     const parseEnvFile = dotenv.config({
@@ -27,8 +26,7 @@ const config = {
     appURL: process.env.APP_URL,
     appLocale: process.env.APP_LOCALE,
     appPort: process.env.PORT || process.env.port || 8080,
-    databaseURL: process.env.DATABASE_URL,
-    seleniumPort: process.env.SELENIUM_PORT,
+    databaseURL: process.env.DATABASE_URL
 };
 
 module.exports = config;

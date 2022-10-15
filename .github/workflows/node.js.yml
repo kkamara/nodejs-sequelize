@@ -36,7 +36,6 @@ jobs:
           sed -i "s/APP_URL=http:\/\/localhost/APP_URL=http:\/\/127.0.0.1:8000/g" .env
           sed -i "s/3306/${{ job.services.mysql.ports['3306'] }}/g" .env
           sed -i "s/DB_HOST=mysql/DB_HOST=127.0.0.1/g" .env
-          sed -i "s/SELENIUM_PORT=4000/SELENIUM_PORT=9515/g" .env
           sed -i "s/local/testing/g" .env
     - name: Setup test environment
       run: |
@@ -49,9 +48,7 @@ jobs:
       run: vendor/chromedriver &
     - name: Install dependencies
       run: yarn install
-    - name: Run web server
-      run: yarn start &
-    - name: Test site renders
-      run: curl localhost:8080 &
+    - run: sudo apt-get install xvfb
     - name: Run browser tests
-      run: yarn test
+      run: xvfb-run --auto-servernum yarn test --env chrome
+

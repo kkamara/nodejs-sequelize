@@ -1,10 +1,10 @@
-const assert = require('assert')
-const { driver, } = require('../test_config')
-
-describe('Navigates to Google', function() {
-  it('test case should work', async function(done) {
-    driver.get('https://google.com')
-    driver.quit()
-    done()
-  })
-})
+module.exports = {
+  'NW test on Google' : function (client) {
+    client
+      .url('http://www.google.com')
+      .waitForElementVisible('body', 1000)
+      .assert.title('Google')
+      .pause(1000)
+      .end()
+  }
+}
