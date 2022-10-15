@@ -20,6 +20,10 @@ yarn test -w
 
 View browser test code: [/blob/main/tests/main_test.go](https://github.com/kkamara/node-react-boilerplate/blob/main/test_setup.js)
 
+## Download Selenium Grid
+
+[link](https://www.selenium.dev/documentation/grid/getting_started/).
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
