@@ -2980,7 +2980,7 @@ packages:
       '@svgr/core': 5.5.0
       '@svgr/plugin-jsx': 5.5.0
       '@svgr/plugin-svgo': 5.5.0
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3573,7 +3573,7 @@ packages:
     resolution: {integrity: sha512-YBrGyT2/uVQ/c6Rr+t6ZJXniY03YtHGMJQYal368burRGYKqhx9qGTWqcBU5s1CwYY9E/ri63RYyG1IacMZtqw==}
     engines: {node: '>=8.9'}
     dependencies:
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
       regex-parser: 2.2.11
     dev: false
 
@@ -5160,7 +5160,7 @@ packages:
       camelcase: 6.3.0
       cssesc: 3.0.0
       icss-utils: 4.1.1
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
       postcss: 7.0.39
       postcss-modules-extract-imports: 2.0.0
       postcss-modules-local-by-default: 3.0.3
@@ -5168,7 +5168,7 @@ packages:
       postcss-modules-values: 3.0.0
       postcss-value-parser: 4.2.0
       schema-utils: 2.7.1
-      semver: 7.3.2
+      semver: 7.3.8
       webpack: 4.44.2
     dev: false
 
@@ -6583,7 +6583,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
       schema-utils: 3.1.1
       webpack: 4.44.2
     dev: false
@@ -8690,8 +8690,8 @@ packages:
       json5: 2.2.1
     dev: false
 
-  /loader-utils/2.0.2:
-    resolution: {integrity: sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==}
+  /loader-utils/2.0.3:
+    resolution: {integrity: sha512-THWqIsn8QRnvLl0shHYVBN9syumU8pYWEHPTmkiVGd+7K5eFNVSY6AJhRvgGF70gg1Dz+l/k8WicvFCxdEs60A==}
     engines: {node: '>=8.9.0'}
     dependencies:
       big.js: 5.2.2
@@ -11373,7 +11373,7 @@ packages:
         optional: true
     dependencies:
       klona: 2.0.5
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
       neo-async: 2.6.2
       schema-utils: 3.1.1
       semver: 7.3.8
@@ -12042,7 +12042,7 @@ packages:
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
     dependencies:
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
       schema-utils: 2.7.1
       webpack: 4.44.2
     dev: false
@@ -12595,7 +12595,7 @@ packages:
         optional: true
     dependencies:
       file-loader: 6.1.1_webpack@4.44.2
-      loader-utils: 2.0.2
+      loader-utils: 2.0.3
       mime-types: 2.1.35
       schema-utils: 3.1.1
       webpack: 4.44.2

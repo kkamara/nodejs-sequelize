@@ -30,7 +30,7 @@ devDependencies:
   assert: 2.0.0
   chromedriver: 106.0.1
   mocha: 9.2.2
-  nightwatch: 2.4.0_chromedriver@106.0.1
+  nightwatch: 2.4.1_chromedriver@106.0.1
   nightwatch-axe-verbose: 2.0.3
   open: 8.4.0
   selenium-server: 3.141.59
@@ -1680,8 +1680,8 @@ packages:
       axe-core: 4.4.3
     dev: true
 
-  /nightwatch/2.4.0_chromedriver@106.0.1:
-    resolution: {integrity: sha512-l5oSMVCIA/EftYTW99WORas22WFGBCFir/3pa74y53xM+7O4KT/9ztjJ2KqbFddz6vlucG6c2uBT3ohNkTCLFg==}
+  /nightwatch/2.4.1_chromedriver@106.0.1:
+    resolution: {integrity: sha512-p/7dUbN2WFDIht+4JyDLlIa61soXH2ND6svc6H2SlaGCavaxxjMAtLhORwnIj/8TKY6EDJtPfdqIEsLFTJZVPg==}
     engines: {node: '>= 10.0.0'}
     hasBin: true
     peerDependencies:
