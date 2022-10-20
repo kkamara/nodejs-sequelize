@@ -18,7 +18,7 @@ cp .env.example .env && docker-compose up --build -d
 ## To run browser tests with gui
 
 ```bash
-pnpm && pnpm test
+pnpm && pnpm run test
 ```
 
 View browser test code: [/blob/main/tests/](https://github.com/kkamara/node-react-boilerplate/blob/main/tests/).
