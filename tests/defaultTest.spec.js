@@ -1,4 +1,5 @@
 module.exports = {
+  '@tags': ['beta'],
   'NW test on Google' : function (client) {
     client
       .url('http://www.google.com')
