@@ -1,6 +1,6 @@
 # nodejs-sequelize
 
-Nodejs with sequelize.
+Nodejs with sequelize orm.
 
 ## Installation
 
@@ -44,10 +44,6 @@ Have [docker](https://docs.docker.com/engine/install/) & [docker-compose](https:
 ```
 
 View browser test code: [/blob/main/tests/](https://github.com/kkamara/node-react-boilerplate/blob/main/tests/).
-
-## To parallel test
-
-[link](https://nightwatchjs.org/v09/guide#parallel-running).
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
