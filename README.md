@@ -7,6 +7,17 @@ Nodejs with sequelize.
 * [Node.js](https://nodejs.org/en/)
 * [pNpM](https://pnpm.io/)
 
+Update the database connection details in [./src/util/database.js](https://github.com/kkamara/nodejs-sequelize/raw/main/src/util/database.js)
+
+```js
+  const sequelize = new Sequelize(
+    'nodejs_sequelize',
+    'root',
+    'secret',
+    { dialect: 'mysql', host: 'localhost', port: 3306, },
+  )
+```
+
 ```bash
   cp .env.example .env
   pnpm install
