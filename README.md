@@ -1,24 +1,35 @@
-# node-react-boilerplate
+# nodejs-sequelize
 
-Nodejs, Mysql, Redis, Selenium.
+Nodejs with sequelize.
 
 ## Installation
 
 * [Node.js](https://nodejs.org/en/)
 * [pNpM](https://pnpm.io/)
 
-## To run locally
+```bash
+  cp .env.example .env
+  pnpm install
+```
+
+## Usage
+
+```bash
+  node src/index.js
+```
+
+## Using docker?
 
 Have [docker](https://docs.docker.com/engine/install/) & [docker-compose](https://docs.docker.com/compose/install/) installed on your operating system.
 
 ```bash
-cp .env.example .env && docker-compose up --build -d
+  docker-compose up --build -d
 ```
 
 ## To run browser tests with gui
 
 ```bash
-pnpm && pnpm run test
+  pnpm run test
 ```
 
 View browser test code: [/blob/main/tests/](https://github.com/kkamara/node-react-boilerplate/blob/main/tests/).

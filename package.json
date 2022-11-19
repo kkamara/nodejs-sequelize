@@ -24,7 +24,7 @@
     "express": "^4.17.1",
     "mysql2": "^2.3.3",
     "sanitize": "^2.1.0",
-    "sequelize": "^6.13.0"
+    "sequelize": "^6.25.3"
   },
   "devDependencies": {
     "assert": "^2.0.0",
