@@ -11,7 +11,7 @@ jobs:
         image: mysql:5.7
         env:
           MYSQL_ROOT_PASSWORD: 'secret'
-          MYSQL_DATABASE: 'nrb-db'
+          MYSQL_DATABASE: 'nodejs_sequelize'
           MYSQL_USER: 'user'
           MYSQL_PASSWORD: 'secret'
         ports:
@@ -51,9 +51,9 @@ jobs:
           sed -i "s/3306/${{ job.services.mysql.ports['3306'] }}/g" .env
           sed -i "s/DB_HOST=mysql/DB_HOST=127.0.0.1/g" .env
           sed -i "s/local/testing/g" .env
+          sed -i "s/3306/${{ job.services.mysql.ports['3306'] }}/g" src/util/database.js
     - name: Install dependencies
       run: pnpm install --silent
-    - run: sudo apt-get install xvfb
-    - name: Run browser tests
-      run: xvfb-run --auto-servernum pnpm run test
+    - name: Run migrations
+      run: node src/index.js
 
