@@ -45,6 +45,14 @@ Have [docker](https://docs.docker.com/engine/install/) & [docker-compose](https:
 
 View browser test code: [/blob/main/tests/](https://github.com/kkamara/node-react-boilerplate/blob/main/tests/).
 
+## Misc
+
+[See react boilerplate.](https://github.com/kkamara/react-boilerplate)
+
+[See php scraper.](https://github.com/kkamara/php-scraper)
+
+[See node react boilerplate.](https://github.com/kkamara/node-react-boilerplate)
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
