@@ -1,6 +1,6 @@
 # nodejs-sequelize [![Run CI](https://github.com/kkamara/nodejs-sequelize/actions/workflows/node.js.yml/badge.svg)](https://github.com/kkamara/nodejs-sequelize/actions/workflows/node.js.yml)
 
-Nodejs with sequelize orm.
+Nodejs with sequelize orm. Reactjs.
 
 ## Installation
 
