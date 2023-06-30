@@ -12,7 +12,7 @@ sequelize
   .sync({ force: true, })
   // .sync()
   .then(result => {
-    return Customer.create({ name: 'Chandler Bing', email: 'cb@gmail.com', })
+    return Customer.create({ name: 'Jane Doe', email: 'js@foobarbazz.com', })
     log(result)
   }).then(customer => {
     customerId = customer.id
